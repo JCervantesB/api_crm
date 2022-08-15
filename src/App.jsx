@@ -13,6 +13,7 @@ function App() {
   return (
       <BrowserRouter>
           <Routes>
+          <Route path='/' element={<Navigate to="/clientes" replace={true} />}/>
               <Route path="/clientes" element={<Layout />}>
                   <Route index element={<Inicio />} />
                   <Route path="nuevo" element={<NuevoCliente />} />
